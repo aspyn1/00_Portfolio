@@ -1,0 +1,301 @@
+*{
+    box-sizing: border-box;
+    background-color: #E0D5BE;
+    font-family: 'cafe24 Supermagic OTF';
+    margin: 0;
+}
+
+main, footer{
+    margin: 100px 50px;
+}
+
+/* nav */
+
+nav{
+    height: 50px;
+    border: 2px solid black;
+
+    position: sticky;
+    top: 0;
+    margin: 0;
+}
+
+nav ul {
+    background-color: #F2F2E2;
+    list-style-type: none;
+
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+
+    height: 100%;
+}
+
+ul li{
+    background-color: #F2F2E2;
+    display: flex;
+    justify-content: center;
+    line-height: 45px;
+    flex-basis: 100%;
+}
+
+ul a{
+    background-color: #F2F2E2;
+    font-size: 18px;
+    font-weight: bold;
+
+    text-decoration: none;
+    color: black;
+}
+
+
+/* profile */
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+#right{
+    display: flex;
+    justify-content: space-between;
+}
+
+header p{
+    text-align: center;
+
+    font-size: 60px;
+    margin: 5px;
+}
+
+header > div:nth-child(1){
+    margin-bottom: 50px;
+}
+
+#img-wrapper1{
+    width: 430px;
+    height: 500px;
+    border-radius: 50%;
+    border: none;
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 100px;
+}
+
+#profile{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#info{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: end;
+    text-align: right;
+
+    margin-right: 100px;
+}
+
+#info > div:nth-child(1),
+#info > div:nth-child(2){
+    display: flex;
+    justify-content: end;
+    text-align: right;
+}
+
+#info > div:nth-child(2){
+    margin-bottom: 50px;
+}
+
+#info a{
+    font-size: 25px;
+}
+
+#info > div{
+    font-size: 25px;
+}
+
+#github, #velog{
+    width: 30px;
+    height: 30px;
+}
+
+/* introduce */
+#introduce{
+    font-size: 25px;
+    margin: 200px 350px;
+    
+    line-height: 45px;
+}
+
+/* skills */
+#skills{
+    margin-bottom: 150px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+#skills img{
+    width: 100px; 
+    height: 100px;
+}
+
+#skills > div:first-child{
+    margin-bottom: 50px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#skills > div:nth-child(2){
+    display: flex;    
+}
+
+#skills p{
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 37px;
+}
+
+#HTML5, #CSS, #Java, #Javascript, #Spring, #Bootstrap, #Figma, #Github{
+    margin-right: 10px;
+    margin-bottom: 40px;
+
+    display: flex;
+}
+
+#chart{
+    height: 40px;
+    width: 1100px;
+    background-color: #477B5C;
+
+    border: none;
+    border-radius: 30px;
+
+    margin-left: 20px;
+}
+
+#percent{
+    font-size: 25px;
+    line-height: 40px;
+
+    margin-left: 50px;
+
+    font-size: 20px;
+}
+
+
+/* work */
+#Work{
+    display: flex;
+    flex-direction: column;
+    
+    margin-bottom: 200px;
+}
+
+#Work > div:first-child{
+    margin-bottom: 50px;
+    font-size: 50px;
+    font-weight: bold;
+
+    margin-left: 60px;
+}
+
+#Work img{
+    width: 100px;
+    height: 100px;
+}
+
+#Work > div:nth-child(2),
+#Work > div:nth-child(3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box{
+    width: 400px;
+    height: 270px;
+    background-color: #D9D9D9;
+    margin: 10px 10px;
+}
+
+#first-line > img{
+    width: 400px;
+    height: 270px;
+    margin: 10px 10px;
+}
+
+
+
+/* footer */
+footer{
+    margin: 200px 350px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+footer img{
+    width: 100px;
+    height: 100px;
+}
+
+footer div:first-child{
+    font-size: 50px;
+
+    margin-bottom: 50px;
+}
+
+#phone, #email{
+    height: 45px;
+    background-color: #D9D9D9;
+    margin: 10px 0px;
+}
+
+#content{
+    height: 312px;
+    background-color: #D9D9D9;
+    margin: 10px 0px;
+}
+
+#send{
+    background-color: #989898;
+    color: white;
+
+    height: 30px;
+    font-size: 20px;
+
+    margin: 10px 0px;
+}
+
+fieldset, input{
+    border: none;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    
+    padding: 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form button{
+    border: none;
+}

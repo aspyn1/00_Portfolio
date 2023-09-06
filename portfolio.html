@@ -7,90 +7,136 @@
     <link rel="stylesheet" href="portfolio.css"> 
 </head>
 <body>
-    <header>
-        <div> 
-            <p>안녕하세요.</p>
-            <p>개발자 최지은의 포트폴리오 입니다.</p>
-        </div>
-        <div>
-            <div class="photo">
-                <img src="../images/포트폴리오_이미지/프로필1.png">
-            </div>
-            <div class="info">
-                <div>Github</div>
-                <div>Velog</div>
-                <div>최지은</div>
-                <div>1994.06.20.</div>
-                <div>aspynisgood@gmail.com</div>
-            </div>
-        </div>
-    </header>
-
     <nav>
         <ul>
-            <li>profile</li>
-            <li>My skills</li>
-            <li>My work</li>
-            <li>contact</li>
-        </ul>
-        <!--position: sticky;-->
+            <li><a href="#">profile</a></li>
+            <li><a href="#skill">My skills</a></li>
+            <li><a href="#Work">My work</a></li>
+            <li><a href="#footer">contact</a></li>
+        </ul>        
     </nav>
 
-    <main>
-        <div class="introduce"></div>
-        <div class="skill">My skills
-            <div id="html5">
-                <div>HTML5</div>
-                <div id="percent1"></div>
+    <main>     
+        <header>
+            <div> 
+                <p>안녕하세요.</p>
+                <p>개발자 최지은의 포트폴리오 입니다.</p>
             </div>
-            <div id="css">
-                <div>CSS</div>
-                <div id="percent2"></div>
+            <div class="right1">
+                <div class="img-wrapper1">
+                    <img src="포트폴리오_이미지/프로필1.png" id="photo1">
+                </div>
+                <div class="info">
+                    <div>
+                        <a href="https://github.com/aspyn1">Github</a>
+                        <img src="포트폴리오_이미지/github.png" id="github">
+                    </div>
+                    <div>
+                        <a href="https://velog.io/@aspyn">Velog</a>
+                        <img src="포트폴리오_이미지/velog.png" id="velog">
+                    </div>
+                    <div>최지은</div>
+                    <div>1994.06.20.</div>
+                    <div>aspynisgood@gmail.com</div>
+                </div>
             </div>
-            <div id="java">
-                <div>Java</div>
-                <div id="percent3"></div>
-            </div>
-            <div id="javascript">
-                <div>JavaScript</div>
-                <div id="percent4"></div>
-            </div>
-            <div id="spring">
-                <div>Spring Boot</div>
-                <div id="percent5"></div>
-            </div>
-            <div id="boot">
-                <div>Bootstrap</div>
-                <div id="percent6"></div>
-            </div>
-            <div id="figma">
-                <div>Figma</div>
-                <div id="percent7"></div>
-            </div>
-            <div id="git">
-                <div>Github</div>
-                <div id="percent8"></div>
-            </div>
+        </header>
+
+
+   
+        <div class="introduce">
+            <p>ABOUT ME</p>
+            <p>내용</p>
+            <p>내용</p>
+            <p>내용</p>
+            <p>내용</p>
+            <p>내용</p>
+            <p>내용</p>
+            <p>내용</p>
         </div>
-        <div>
+
+        <div class="skill" id="skill">
             <div>
-                <div>imgae</div>
-                <div>Work</div>
+                <img src="포트폴리오_이미지/skill.png"> My skills
+            </div>   
+            <div id="bottom">
+                <div>
+                    <p>HTML5</p>
+                    <p>CSS</p>
+                    <p>Java</p>
+                    <p>JavaScript</p>
+                    <p>Spring Boot</p>
+                    <p>Bootstrap</p>
+                    <p>Figma</p>
+                    <p>Github</p>
+                </div>
+                <div>
+                    <div id="html5">
+                        <div id="chart1"></div>
+                        <div id="percent1">80%</div>
+                    </div>
+                    <div id="css">
+                        <div id="chart2"></div>
+                        <div id="percent2">80%</div>
+                    </div>
+                    <div id="java">
+                        <div id="chart3"></div>
+                        <div id="percent3">80%</div>
+                    </div>
+                    <div id="javascript">
+                        <div id="chart4"></div>
+                        <div id="percent4">80%</div>
+                    </div>
+                    <div id="spring">
+                        <div id="chart5"></div>
+                        <div id="percent5">80%</div>
+                    </div>
+                    <div id="boot">
+                        <div id="chart6"></div>
+                        <div id="percent6">80%</div>
+                    </div>
+                    <div id="figma">
+                        <div id="chart7"></div>
+                        <div id="percent7">80%</div>
+                    </div>
+                    <div id="git">
+                        <div id="chart8"></div>
+                        <div id="percent8">80%</div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+
+        <div class="Work" id="Work">
+            <div>
+                <img src="포트폴리오_이미지/work.png" id="icon"> Work
             </div>
             <div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <img id="work1" src="포트폴리오_이미지/클론코딩.png">
+                <div id="work2"></div>
+                <div id="work3"></div>
+            </div>
+            <div>
+                <div id="work4"></div>
+                <div id="work5"></div>
+                <div id="work6"></div>
             </div>
         </div>
     </main>
 
-    <footer>
-        <div class="contact"></div>
-        <div class="phone"></div>
-        <div class="email"></div>
-        <div class="content"></div>
-        <div class="send">SEND</div>
+    <footer id="footer">
+        <div>
+            <img src="포트폴리오_이미지/contact.png"> Contact
+        </div>
+        <form action="#" id="contact">
+            <fieldset>
+                <input class="phone" placeholder="전화번호를 입력해주세요"></input>
+                <input class="email" placeholder="연락받을 이메일을 입력해주세요"></input>
+                <input class="content" placeholder="문의하실 내용을 입력해주세요."></input>
+            </fieldset>            
+            <button class="send">SEND</button>
+        </form>
+        
     </footer>
 
 </body>
