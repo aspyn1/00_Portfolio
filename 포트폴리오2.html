@@ -109,35 +109,41 @@
         
         <div id="Work">
             <div>
-                <img src="포트폴리오_이미지/work.png"> Work
+                <img src="포트폴리오_이미지/work.png" id="work-img"> Work
             </div>
-            <div id="first-line">
-                <img id="clone" src="포트폴리오_이미지/클론코딩.png">
-                <div id="box"></div>
-                <div id="box"></div>
+            <div class="gallery">
+                <button class="prev-btn"> < </button>
+                <div class="gallery-container">
+                    <div class="gallery-images">
+                        <div class="gallery-image"><img src="포트폴리오_이미지/클론코딩.png" alt="Image 1"></div>
+                        <div class="gallery-image"></div>
+                        <div class="gallery-image"></div>
+                        <div class="gallery-image"></div>
+                    </div>
+                </div>
+                <button class="next-btn"> > </button>
             </div>
-            <div>
-                <div id="box"></div>
-                <div id="box"></div>
-                <div id="box"></div>
-            </div>
+            
         </div>
+
+
     </main>
 
     <footer id="footer">
         <div>
             <img src="포트폴리오_이미지/contact.png"> Contact
         </div>
-        <form>
+        <form action="#" method="post" onsubmit="return Submit();">
             <fieldset>
-                <input id="phone" placeholder="연락받으실 연락처를 작성해주세요"></input>
-                <input id="email" placeholder="연락받으실 이메일 주소를 작성해주세요"></input>
-                <input id="content" placeholder="문의주시는 내용을 입력해주세요"></input>
+                <input type="tel" id="phone" placeholder="연락받으실 연락처를 작성해주세요"></input>
+                <input type="email" id="email" placeholder="연락받으실 이메일 주소를 작성해주세요"></input>
+                <input type="text" id="content" placeholder="문의주시는 내용을 입력해주세요"></input>
             </fieldset>
-            <button id="send">SEND</button>
+            <button type="submit" id="send">SEND</button>
         </form>
-        
     </footer>
-    
+
+
+    <script src="js/portfolio.js"></script>    
 </body>
 </html>
